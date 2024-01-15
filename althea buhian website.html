@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-image:url("21.jpg");
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Style the body */
+body {
+  font-family: tahoma;
+  margin: 0;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-image:url("506.jpg");
+}
+
+
+/* Header/Logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background-image:url("506.jpg");
+  color: black;
+  font-size: 20px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+
+
+
+#History {background-image:url("27.jpg");}
+#About {background-image:url("208.jpg");}
+#Programming {background-image:url("30.jpg");}
+#Html {background-image:url("209.jpg");}
+#Contact {background-image:url("112.jpg");}
+
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('History', this, 'red')">History</button>
+<button class="tablink" onclick="openPage('About', this, 'red')" id="defaultOpen">About</button>
+<button class="tablink" onclick="openPage('Programming', this, 'red')">Programming</button>
+<button class="tablink" onclick="openPage('Html', this, 'red')">Html</button>
+<button class="tablink" onclick="openPage('Contact', this, 'red')">Contact</button>
+
+
+<div id="History" class="tabcontent">
+ <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<h1><center>Welcome to Thea's Website</center></h1>
+  <p><center>I was graduated at Sta.Cruz Elementary Scool</center></p>
+  <p><center>When I was 2years old,my auntie want to adopt me</center></p>
+
+<br><br><br>
+
+<center><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="14.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">Forgot password?</a></span>
+    </div>
+  </center>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+  
+</div>
+
+
+<div id="Html" class="tabcontent">
+   <h1><p><center><font size="5"><a href="personal11.html">Activity1</a></center></p></h1>
+   <h1><p><center><font size="5"><a href="personal12.html">Activity2</a></center></p></h1>
+  <h1><p><center><font size="5"><a href="personal13.html">Activity3</a></center></p></h1>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <style>
+body {
+  font-size: 30px;
+}
+</style>
+<body>
+<p>&#128222;:095337856144</p>
+<p>&#128231;:buhian.althea.2005@gmail.com</p>
+   <p>FACEBOOK:ALTHEA BUHIAN</p>
+
+
+<br><br><br>
+<p><label for="subject">Comment</label></p>
+   <textarea id="subject" name="subject" placeholder="Input your message.." style="width:50%" "height:50%"></textarea>
+<br>
+<center><input type="submit" value="Submit"></center>
+</div>
+
+<div id="About" class="tabcontent">
+<p><center><font size="5" face="tahoma"><u><b>Personal data</b></u></font></br>
+Place of birth:Sta.Cruz Manila de Bugabos Butuan City</br></td>
+Date of Birth:SEP 23,2005</br>
+Civil Status: Single</br>
+Citizenship: Filipino </br>
+Height:152 cm</br>
+weight: 38 lbs</br>
+ <br>Father's Name: ALFREDO BUHIAN </br>
+    Mother's Name: LIDA PATIGA</br>
+    SSS No. None Application</br>
+    TIN #:None Application<font></br>
+<p> <font size="5" face="tahoma"><u><b>Educational Background</b></u></font></br>
+    <font size="4">Primary: STA.Crz ELEM. SCHOOL</br>
+                             Butuan City</br>
+                            2017-2018</br>
+    <font size="4"> Secondary: Butuan City Comprehensive High School</br>
+                             Dulag Butuan City
+                             2020-2021</br>
+  <front size="4">Tertiary: None Applicable</font/br>
+
+<p> <font size="5"face="tahoma"><u><b>Employment History</b></u></font></br>
+    <font size="4">Mercadejas Inc.</br>
+     Metro Manila</br>
+     Maneger</br>
+     August 22,2022 to December 5,2023</font></center>
+
+<br><br><br></p> 
+</div>
+
+<div id="Programming" class="tabcontent">
+  <style>
+
+ <br><br><br></p> 
+</div>
+
+  <style>
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+
+<h2>hello here's my links</h2>
+
+<div class="dropdown">
+  <button class="dropbtn">click me honey<style>
+body {
+  font-size: 20px;
+}
+</style>
+<i class="fa fa-caret-down"><i>
+     </button>
+     <div class="dropdown-content">
+
+<span style='font-size:100px;'>&#128525;</span>
+
+
+</button>
+  <div class="dropdown-content">
+    <a href="https://www.onlinegdb.com/edit/UHW9AKyt_"><style>
+body {
+  font-size: 20px;
+}
+
+<p>Link 1 &#x1F60F;</p>
+  <a href="https://www.onlinegdb.com/edit/UHW9AKyt_"><style>
+body {
+  font-size: 20px;
+}
+</style>
+
+<p>Link 2 &#x1F602;</p>
+</a>
+    <a href="https://www.onlinegdb.com/edit/7PsNXYJTB"><style>
+body {
+  font-size: 20px;
+}
+</style>
+
+<p>Link 3 &#x1F609;</p>
+
+</a>
+    <a href="https://www.onlinegdb.com/edit/C_z7biEb9"><style>
+body {
+  font-size: 20px;
+}
+</style>
+
+
+
+<p>Link 4 &#x1F47F;</p>
+
+</a>
+    <a href="https://www.onlinegdb.com/edit/0ArUKJ-YO"><style>
+body {
+  font-size: 20px;
+}
+</style>
+
+
+<p>Link 5 &#x1F603;</p>
+
+</body></a>
+    <a href="https://www.onlinegdb.com/edit/2LoZOza0C"><style>
+body {
+  font-size: 20px;
+}
+</style>
+
+
+<p>Link 6 &#x26C4;</p>/
+  </a>
+    <a href="https://www.onlinegdb.com/edit/8Wsy6WsUV"><style>
+body {
+  font-size: 20px;
+}
+</style>
+
+
+
+<p>Link 7 &#x1F612;</p>
+  </a>
+    <a href="https://www.onlinegdb.com/edit/8Wsy6WsUV"><style>
+body {
+  font-size: 20px;
+}
+
+</style>
+  </div>
+</div>
+
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+   
+
+
+</body>
+</html> 
